@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function palindrome(str) {
+            let str1 = '';
+            for (let i = str.length; i >= 0; i--) {
+                str1 += str[i];
+
+            }
+
+            if (str1 == str) {
+                console.log("Yes it is a palindrome");
+
+            }
+            else {
+                console.log("not palindrome");
+            }
+        }
+        palindrome('12321');
+       // palindrome('12321');
+        //palindrome('abcd');
+
+    </script>
+
+</body>
+
+</html>

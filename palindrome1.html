@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isPalindrome(str) {
+            var newStr = '';
+
+            for (var i = str.length - 1; i >= 0; i--) {
+                newStr += str[i];// to store reverse array
+            }
+
+            if (newStr == str) { // checks whether the given str and reverse string is same
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+        }
+        isPalindrome('redivider');
+        isPalindrome('drive');
+        isPalindrome('kayak');
+        isPalindrome('11211');
+        isPalindrome('1115544');
+
+    </script>
+</body>
+
+</html>
